@@ -1,0 +1,231 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/league.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">          
+   <section data-markdown data-separator="^\n---$" data-separator-vertical="^\n>>>$">
+    <script type="text/template">
+
+## 紙地図をGISで使う
+
+# 幾何補正
+
+---
+## 作業の内容
+
+- QGISジオリファレンサーを使う
+- 図面に座標を与える
+- 背景図から座標を取得する
+
+---
+ラスタ→ジオリファレンサー→ジオリファレンサー
+
+<img src="02.png" width=80%>
+
+---
+ファイル→ラスタを開く
+
+<img src="03.png" width=60%>
+
+---
+端点測量図の読み込み
+
+<img src="04.png" width=80%>
+
+---
+- 適度に拡大して→既知の座標点へズーム
+- ポイントの追加
+
+<img src="05.png" width=50%>
+
+---
+- グリッド交点でクリック
+- 交点座標を入力
+
+<img src="06.png" width=50%>
+
+---
+- 同一地点から座標を自動取得
+- ポイントの追加→マップキャンパスより
+
+<img src="07.png" width=50%>
+
+---
+同一地点をクリック
+
+<img src="08.png" width=50%>
+
+---
+座標を自動取得
+
+<img src="09.png" width=50%>
+
+---
+4点の座標を取得
+
+<img src="10.png" width=60%>
+
+---
+設定→変換の設定
+
+<img src="11.png" width=80%>
+
+---
+
+<img src="12-1.png" width=45%>
+
+>>>
+### 変換タイプ
+
+#### 迷ったら、「シンプレートスプライン」
+
+- 線形
+- ヘルマート
+- 多項式1
+- 多項式1
+- 多項式1
+- シンプレートスプライン
+- 投影変換
+
+うまくいかない場合は「線形」で試して
+
+---
+<img src="12-2.png" width=45%>
+
+>>>
+### リサンプリング方法
+
+迷ったら、「線形」
+
+- 最近傍
+- 線形
+- キュービック
+- キュービックスプライン
+- ランチョシュ
+
+###### ピクセルの歪みを補完する手法
+
+>>>
+### リサンプリング方法
+
+- 離散的なデータ　最近傍（統計的な変化がない）
+- 航空写真　　　　キュービック（滑らかな結果）
+
+---
+
+<img src="12-3.png" width=45%>
+
+---
+### 変換先SRS
+
+- 「フィルター」に「30171」と入力
+- Tokyo / Japan Plane Rectanglur CS11 EPSG:30171
+
+<img src="13.png" width=60%>
+
+>>>
+- 日本測地系（Tokyo Datam）
+	- 緯度経度系
+	- 平面直角座標系
+	- ユニバーサルトランスバースメルカトルグリッド
+- 世界測地系（JGD2000）
+	- 緯度経度系
+	- 平面直角座標系
+	- ユニバーサルトランスバースメルカトルグリッド 
+- WGS84
+
+>>>
+
+
+---
+<img src="12-4.png" width=45%>
+
+>>>
+
+<img src="14.png" width=80%>
+
+---
+ファイル→ジオリファレンスの開始
+
+<img src="15.png" width=50%>
+
+---
+幾何補正された測量図
+
+<img src="16.png" width=80%>
+
+>>>
+昭和23年米軍撮影航空写真
+
+<img src="17.png" width=80%>
+
+>>>
+小学校4年生「昔のまち探検」
+
+<img src="17-2.png" width=80%>
+
+>>>
+松前城線図
+
+<img src="18.png" width=80%>
+
+---
+測量図面はスキャンデータが望ましいが・・・
+
+<img src="19.jpg" width=80%>
+
+---
+撮影データの幾何補正
+
+<img src="20.png" width=80%>
+
+    </script>
+</section>
+
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+		dependencies: [
+{ src: 'reveal.js-2.6.1/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+{ src: 'reveal.js-2.6.1/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } }
+]
+	</body>
+</html>
