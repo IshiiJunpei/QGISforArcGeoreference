@@ -1,0 +1,62 @@
+{
+  "properties": {
+    "proj": "+proj=utm +zone=54 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs",
+    "baseExtent": [
+      431486.4602679327,
+      4636902.632856151,
+      444707.20379233424,
+      4645974.372899612
+    ],
+    "zShift": 0.0,
+    "width": 100.0,
+    "zExaggeration": 1.0,
+    "height": 68.61747243426633,
+    "wgs84Center": {
+      "lon": 140.25344402803478,
+      "lat": 41.922477454841555
+    },
+    "rotation": 0,
+    "crs": "EPSG:3100"
+  },
+  "layers": [
+    {
+      "properties": {
+        "name": "merge2_utm54",
+        "shading": true,
+        "queryable": 1,
+        "visible": true,
+        "type": "dem"
+      },
+      "data": [
+        {
+          "grid": {
+            "height": 166,
+            "width": 242,
+            "url": "./data/index/L0_DEM0.bin"
+          },
+          "translate": [
+            0.0,
+            0.0,
+            0
+          ],
+          "material": {
+            "ds": 1,
+            "image": {
+              "url": "./data/index/L0_IMG0.png"
+            },
+            "type": 0
+          },
+          "width": 100.0,
+          "height": 68.61747243426633,
+          "sides": true,
+          "block": 0,
+          "layer": 5,
+          "type": "block"
+        }
+      ],
+      "id": 5,
+      "type": "layer"
+    }
+  ],
+  "type": "scene"
+}
