@@ -78,11 +78,11 @@ Created by Ishii Junpei ( [@ishiijunpei](https://twitter.com/ishiijunpei))
 
 変換タイプ→シンプレートスプライン（線形でもOK）
 
-<img src="12-1.png" width=70%>
+<img src="12-1.png" width=50%>
 
 リサンプリング方法→線形
 
-<img src="12-2.png" width=70%>
+<img src="12-2.png" width=50%>
 
 ---
 ### 変換タイプ
@@ -118,7 +118,7 @@ Created by Ishii Junpei ( [@ishiijunpei](https://twitter.com/ishiijunpei))
 - 離散的なデータ　最近傍（統計的な変化がない）
 - 航空写真　　　　キュービック（滑らかな結果）
 
-<img src="12-3.png" width=45%>
+<img src="12-3.png" width=50%>
 
 ---
 ### 変換先SRS
