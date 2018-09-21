@@ -179,7 +179,3 @@ Created by Ishii Junpei ( [@ishiijunpei](https://twitter.com/ishiijunpei))
 
 <img src="20.png" width=80%>
 
-
-### 幾何補正で図面の利用が広がります。
-
-<iframe src=https://github.com/IshiiJunpei/QGISforArcGeoreference/blob/master/index.html width=1000 height=600></iframe>
