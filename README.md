@@ -164,15 +164,15 @@ Created by Ishii Junpei ( [@ishiijunpei](https://twitter.com/ishiijunpei))
 
 ### 昭和23年米軍撮影航空写真
 
-<img src="17.png" width=80%>
+<img src="17.png" width=90%>
 
 ### 小学校4年生「昔のまち探検」
 
-<img src="17-2.png" width=80%>
+<img src="17-2.png" width=90%>
 
 ### 松前城線図
 
-<img src="18.png" width=80%>
+<img src="18.png" width=90%>
 （背景地図はOpenStreetMapを使用）
 
 ---
@@ -180,11 +180,11 @@ Created by Ishii Junpei ( [@ishiijunpei](https://twitter.com/ishiijunpei))
 
 測量図面はスキャンデータが望ましいが、大型のスキャナがなければ撮影図版で対応することも可能です。
 
-<img src="19.jpg" width=80%>
+<img src="19.jpg" width=90%>
 
 ### 撮影データの幾何補正
 
 撮影された画像データを幾何補正した場合、スキャナデータよりも精度は落ちます。用途に応じてデジタル化の手法を検討してください。
 
-<img src="20.png" width=80%>
+<img src="20.png" width=90%>
 
