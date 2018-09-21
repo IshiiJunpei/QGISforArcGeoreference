@@ -77,9 +77,11 @@ Created by Ishii Junpei ( [@ishiijunpei](https://twitter.com/ishiijunpei))
 <img src="11.png" width=70%>
 
 変換タイプ→シンプレートスプライン（線形でもOK）
+
 <img src="12-1.png" width=70%>
 
 リサンプリング方法→線形
+
 <img src="12-2.png" width=70%>
 
 ---
