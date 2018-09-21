@@ -61,22 +61,20 @@ Created by Ishii Junpei ( [@ishiijunpei](https://twitter.com/ishiijunpei))
 <img src="08.png" width=50%>
 
 座標を自動取得
-
 <img src="09.png" width=50%>
 
 
 4点の座標を取得
-
 <img src="10.png" width=60%>
 
 
 設定→変換の設定
-
 <img src="11.png" width=70%>
 
-
+変換タイプ→シンプレートスプライン（線形でもOK）
 <img src="12-1.png" width=45%>
 
+リサンプリング方法→線形
 <img src="12-2.png" width=45%>
 
 
@@ -92,7 +90,7 @@ Created by Ishii Junpei ( [@ishiijunpei](https://twitter.com/ishiijunpei))
 - シンプレートスプライン
 - 投影変換
 
-うまくいかない場合は「線形」で試して
+うまくいかない場合は「線形」で試してください。
 
 
 ### リサンプリング方法
@@ -184,4 +182,4 @@ Created by Ishii Junpei ( [@ishiijunpei](https://twitter.com/ishiijunpei))
 
 ### 幾何補正で図面の利用が広がります。
 
-<iframe src=Oraimo/index.html width=1000 height=600></iframe>
+<iframe src=https://github.com/IshiiJunpei/QGISforArcGeoreference/blob/master/index.html width=1000 height=600></iframe>
